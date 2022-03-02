@@ -100,8 +100,14 @@ body,h1{
 	.slick-track{
 		height: 350px;
 	}
+	.content{
+		padding-top: 50px;
+	}
  }
  @media screen and (max-width: 425px) {
+	.content{
+		padding-top: 20px;
+	}
 	.title{
 		font-size: 42px;
 	}
