@@ -1,0 +1,125 @@
+*{
+	box-sizing: border-box;
+}
+body,h1{
+	margin: 0;
+	font-family: 'Dosis', sans-serif;;
+}
+.wrapper {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("../imgs/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.container{
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.content{
+	text-align: center;
+	color: rgb(1, 253, 127);
+	padding-top: 100px;
+}
+.title{
+	font-size: 72px;
+	font-weight: bold;
+	
+}
+.subtitle{
+	font-size: 36px;
+	color: rgb(218, 255, 7);
+	font-weight: normal;
+}
+.slider__item{
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+.slider__item img{
+	width: auto;
+	height: 100%;
+}
+
+
+/* Слайдер */
+.slick-slider{
+	display: flex;
+	align-items: center;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	height: 500px;
+
+}
+/* Слайд */
+.slick-slide{
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{
+	height: 30px;
+	cursor: pointer;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+@media screen and (max-width: 800px) {
+	.slick-track{
+		height: 350px;
+	}
+ }
+ @media screen and (max-width: 425px) {
+	.title{
+		font-size: 42px;
+	}
+	.subtitle{
+		font-size: 24px;
+	}
+	.slider{
+		position: relative;
+	}
+	.slick-arrow{
+		position: absolute;
+		bottom: -35px;
+		width: 50px;
+	}
+	.slick-prev{
+		left: 50px;
+	}
+	.slick-next{
+		right: 50px;
+	}
+ }
