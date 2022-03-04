@@ -4,6 +4,7 @@ $(document).ready(function () {
 		speed: 500,
 		fade: true,
 		cssEase: 'linear',
+		slidesToShow: 1,
 		centerMode: true,
 		prevArrow: '<button type="button" class="slick-prev">(:</button>',
 		nextArrow: '<button type="button" class="slick-next">:)</button>',
