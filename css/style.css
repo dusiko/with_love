@@ -12,6 +12,7 @@ body,h1{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	
 }
 
 .container{
@@ -20,9 +21,8 @@ body,h1{
 	padding: 0 10px;
 }
 .content{
-	text-align: center;
 	color: rgb(1, 253, 127);
-	padding-top: 100px;
+	padding-top: 50px;
 }
 .title{
 	font-size: 72px;
@@ -33,6 +33,7 @@ body,h1{
 	font-size: 36px;
 	color: rgb(218, 255, 7);
 	font-weight: normal;
+	text-align: end;
 }
 .slider__item{
 	display: flex;
@@ -110,7 +111,7 @@ body,h1{
 		padding-top: 20px;
 	}
 	.title{
-		font-size: 42px;
+		font-size: 38px;
 	}
 	.subtitle{
 		font-size: 24px;
@@ -131,22 +132,22 @@ body,h1{
 	}
  }
 
- @media screen and (orientation: landscape) {
-	.wrapper{
-		height: 100%;
-		width: 100%;
-	}
-	/* @media screen and (max-width: 425px) {
+ @media screen and (max-height: 610px) {
+	 .wrapper {
+		 min-height: 630px;
+	 }
+	 .content{
+		 padding-top: 10px;
+	 }
+	 .subtitle{
+		 margin: 10px 0;
+	 }
+ }
+ 
+@media screen and (orientation: landscape) {
+	@media screen and (max-width: 1024px) {
 		.title{
-			font-size: 32px;
+			font-size: 42px;
 		}
-		.subtitle{
-			font-size: 20px;
-			margin: 12px 0;
-		}
-		.slick-list {
-			max-height: 200px;
-		}
-	} */
-
+	}
  }
