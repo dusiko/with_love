@@ -49,6 +49,7 @@ body,h1{
 .slick-slider{
 	display: flex;
 	align-items: center;
+	padding-bottom: 10px;
 }
 /* Слайдер запущен */
 .slick-slider.slick-initialized{}
@@ -128,4 +129,24 @@ body,h1{
 	.slick-next{
 		right: 50px;
 	}
+ }
+
+ @media screen and (orientation: landscape) {
+	.wrapper{
+		height: 100%;
+		width: 100%;
+	}
+	/* @media screen and (max-width: 425px) {
+		.title{
+			font-size: 32px;
+		}
+		.subtitle{
+			font-size: 20px;
+			margin: 12px 0;
+		}
+		.slick-list {
+			max-height: 200px;
+		}
+	} */
+
  }
